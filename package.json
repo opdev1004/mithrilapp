@@ -1,0 +1,28 @@
+{
+  "name": "mithril-app",
+  "version": "0.0.1",
+  "scripts": {
+    "dev:server": "npx tsx server/app.ts",
+    "dev:client": "vite",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mithril": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/mithril": "^2.0.8",
+    "@types/node": "^24.0.14",
+    "concurrently": "^9.2.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typescript": "^4.9.5",
+    "vite": "^2.6.2"
+  }
+}
